@@ -1,0 +1,186 @@
+:root {
+  --primary: #820000;
+  --secondary: #67AE3E;
+  --title: #58595B;
+  --text: #A7A9AC;
+}
+
+body, html{
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--title);
+}
+
+p{
+    color: var(--text);
+}
+
+
+a{
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: var(--title);
+}
+
+/* HEADER */
+
+header{
+    height: 100%;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.logo{
+    width: 60%;
+}
+
+.img-carousel{
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background-color: #fff !important;
+    height: 100px;
+    padding: 0 5%;
+}
+
+
+.navbar-collapse{
+    background-color: #fff;
+    padding: 0 5%;
+
+}
+
+/* QUEM SOMOS */
+
+#quem-somos{
+    background-color: #fff;
+}
+
+.quem-somos-row{
+    margin: 0;
+    padding: 0;
+}
+
+.quem-somos-description{
+    padding: 10% 2%;
+}
+
+.quem-somos-bkg{
+    background: url('../img/bkg4.jpg');
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+/* COZINHA */
+#cozinha{
+    background: url('../img/white-waves.png');
+    /* height: 700px; */
+    padding: 10% 0;
+    background-attachment: fixed;
+}
+
+.col-cozinha{
+    text-align: center;
+}
+
+.img-cozinha{
+    width: 100%;
+}
+
+.bkg-cozinha{
+    background: url('../img/bkg5.jpg');
+    background-attachment: fixed;
+    height: 400px;
+}
+
+/* GALERIA */
+
+#galeria{
+    padding: 10% 0;
+}
+
+.img-galeria{
+    width: 100%;
+    margin: 5% 0;
+}
+
+/* CONTATO */
+
+#contato{
+    padding: 0 0 5%;
+}
+
+#contato i{
+    margin: 0 5%;
+    font-size: 1.5em;
+}
+
+#contato a{
+    text-transform: none;
+}
+
+/* RODAPÉ */
+
+footer{
+    background-color: #1b1b1b;
+    color: #d3d3d3;
+    padding: 2% 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a{
+    text-transform: none;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    section{
+        padding: 0 5%;
+    }
+    .logo{
+        width: 70%;
+    }
+    .img-carousel{
+        max-height: 100vh;
+        min-height: 100vh;
+        width: auto;
+    }
+
+    .img-cozinha{
+        width: 60%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    #contato .row{
+        text-align: center;
+    }
+}
