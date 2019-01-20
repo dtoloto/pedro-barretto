@@ -184,4 +184,8 @@ footer a{
     #contato .row{
         text-align: center;
     }
+
+    #quem-somos{
+        padding: 10% 0;
+    }
 }
